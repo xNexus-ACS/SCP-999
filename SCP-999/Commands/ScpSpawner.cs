@@ -1,4 +1,4 @@
-﻿using CommandSystem;
+using CommandSystem;
 using Exiled.API.Features;
 using System;
 using Exiled.Permissions.Extensions;
@@ -25,27 +25,27 @@ namespace SCP_999.Commands
             string[] args = arguments.Array;
             if (args == null)
             {
-                response = "You need arguments";
+                response = "Usage: scp999 <playerid> 999";
                 return false;
             }
             Player target = Player.Get(args[1]);
 
             if (target == null)
             {
-                response = "Must define a target";
+                response = "Usage: scp999 <playerid> 999";
                 return false;
             }
             switch (args[2])
             {
-                case "usage":
-                    {
-                        response = "Usage: scp999 <playerid> <999>";
-                        return true;
-                    }
                 case "999":
                     {
                         CustomRole.Get(typeof(Scp999Script)).AddRole(target);
                         break;
+                    }
+                case "default":
+                    {
+                        response = "";
+                        return false;
                     }
             }
             response = "Done";
