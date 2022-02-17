@@ -31,7 +31,7 @@ namespace SCP_999
             }
         };
         /// <summary>
-        /// Inventario que tendra el 999
+        /// Inventario que tendra el 999 / Inventory
         /// </summary>
         protected override List<string> Inventory { get; set; } = new List<string>
         {
@@ -40,7 +40,7 @@ namespace SCP_999
             $"{ItemType.KeycardO5}",
         };
         /// <summary>
-        /// BC que aparecera al ponerle al jugador el role
+        /// BC que aparecera al ponerle al jugador el role y stuff / BC that will appear to the player and some stuff
         /// </summary>
         /// <param name="player"></param>
         protected override void RoleAdded(Player player)
@@ -53,7 +53,7 @@ namespace SCP_999
             base.RoleAdded(player);
         }
         /// <summary>
-        /// Activa los eventos
+        /// Activa los eventos / Activate the events
         /// </summary>
         protected override void SubscribeEvents()
         {
@@ -62,7 +62,7 @@ namespace SCP_999
             base.SubscribeEvents();
         }
         /// <summary>
-        /// Desactiva los eventos
+        /// Desactiva los eventos / Disable the events
         /// </summary>
         protected override void UnSubscribeEvents()
         {
@@ -71,7 +71,7 @@ namespace SCP_999
             base.UnSubscribeEvents();
         }
         /// <summary>
-        /// Hace que el 999 no pueda tirar juegos
+        /// Hace que el 999 no pueda tirar objetos / Makes the 999 unable to drop objects
         /// </summary>
         /// <param name="ev"></param>
         public void OnDroppingItem(DroppingItemEventArgs ev)
@@ -83,7 +83,7 @@ namespace SCP_999
             }
         }
         /// <summary>
-        /// Hace que el 999 no pueda cojer objetos
+        /// Hace que el 999 no pueda cojer objetos / Makes the 999 unable to pick up items
         /// </summary>
         /// <param name="ev"></param>
         public void OnPickingUpItem(PickingUpItemEventArgs ev)
