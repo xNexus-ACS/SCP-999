@@ -6,7 +6,7 @@ using Scp999Handler_Player = Exiled.Events.Handlers.Player;
 using Exiled.Events.EventArgs;
 using UnityEngine;
 
-namespace SCP_999.Scp999PlayerScript
+namespace SCP_999
 {
     public class Scp999Script : CustomRole
     {
@@ -31,7 +31,7 @@ namespace SCP_999.Scp999PlayerScript
             }
         };
         /// <summary>
-        /// Inventario que tendra el 999 / Inventory
+        /// Inventario que tendra el 999
         /// </summary>
         protected override List<string> Inventory { get; set; } = new List<string>
         {
@@ -40,7 +40,7 @@ namespace SCP_999.Scp999PlayerScript
             $"{ItemType.KeycardO5}",
         };
         /// <summary>
-        /// BC que aparecera al ponerle al jugador el role y stuff / BC that will appear to the player and some stuff
+        /// BC que aparecera al ponerle al jugador el role
         /// </summary>
         /// <param name="player"></param>
         protected override void RoleAdded(Player player)
@@ -53,7 +53,7 @@ namespace SCP_999.Scp999PlayerScript
             base.RoleAdded(player);
         }
         /// <summary>
-        /// Activa los eventos / Activate the events
+        /// Activa los eventos
         /// </summary>
         protected override void SubscribeEvents()
         {
@@ -62,7 +62,7 @@ namespace SCP_999.Scp999PlayerScript
             base.SubscribeEvents();
         }
         /// <summary>
-        /// Desactiva los eventos / Disable the events
+        /// Desactiva los eventos
         /// </summary>
         protected override void UnSubscribeEvents()
         {
@@ -71,7 +71,7 @@ namespace SCP_999.Scp999PlayerScript
             base.UnSubscribeEvents();
         }
         /// <summary>
-        /// Hace que el 999 no pueda tirar objetos / Makes the 999 unable to drop objects
+        /// Hace que el 999 no pueda tirar juegos
         /// </summary>
         /// <param name="ev"></param>
         public void OnDroppingItem(DroppingItemEventArgs ev)
@@ -83,7 +83,7 @@ namespace SCP_999.Scp999PlayerScript
             }
         }
         /// <summary>
-        /// Hace que el 999 no pueda cojer objetos / Makes the 999 unable to pick up items
+        /// Hace que el 999 no pueda cojer objetos
         /// </summary>
         /// <param name="ev"></param>
         public void OnPickingUpItem(PickingUpItemEventArgs ev)

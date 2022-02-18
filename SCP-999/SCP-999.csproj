@@ -68,6 +68,7 @@
   <ItemGroup>
     <Compile Include="Commands\ScpSpawner.cs" />
     <Compile Include="Config.cs" />
+    <Compile Include="EventHandlers.cs" />
     <Compile Include="MainClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scp999Script.cs" />
