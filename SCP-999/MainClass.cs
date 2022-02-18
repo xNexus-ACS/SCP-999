@@ -1,4 +1,5 @@
 ﻿using Exiled.API.Features;
+using SCP_999.Scp999PlayerScript;
 using System;
 using Server = Exiled.Events.Handlers.Server;
 
@@ -10,7 +11,7 @@ namespace SCP_999
         public override string Name { get; } = "Scp999PlayerScript";
         public override string Prefix { get; } = "scp_999";
         public override string Author { get; } = "xNexus-ACS";
-        public override Version Version { get; } = new Version(0, 2, 0);
+        public override Version Version { get; } = new Version(0, 3, 0);
         public override Version RequiredExiledVersion { get; } = new Version(4, 2, 3);
 
         public Scp999Script Scp999;

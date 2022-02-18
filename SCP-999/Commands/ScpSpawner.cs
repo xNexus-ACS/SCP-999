@@ -1,8 +1,9 @@
-using CommandSystem;
+﻿using CommandSystem;
 using Exiled.API.Features;
 using System;
 using Exiled.Permissions.Extensions;
 using Exiled.CustomRoles.API.Features;
+using SCP_999.Scp999PlayerScript;
 
 namespace SCP_999.Commands
 {
@@ -11,7 +12,7 @@ namespace SCP_999.Commands
     {
         public string Command { get; } = "scp999";
         public string[] Aliases { get; } = { "s999" };
-        public string Description { get; } = "Spawn de SCP 999";
+        public string Description { get; } = "Command for spawn the SCP999";
 
         public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
         {
@@ -37,15 +38,15 @@ namespace SCP_999.Commands
             }
             switch (args[2])
             {
-                case "999":
-                    {
-                        CustomRole.Get(typeof(Scp999Script)).AddRole(target);
-                        break;
-                    }
                 case "default":
                     {
                         response = "";
                         return false;
+                    }
+                case "999":
+                    {
+                        CustomRole.Get(typeof(Scp999Script)).AddRole(target);
+                        break;
                     }
             }
             response = "Done";

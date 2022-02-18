@@ -1,5 +1,6 @@
 ﻿using Exiled.API.Features;
 using Exiled.CustomRoles.API.Features;
+using SCP_999.Scp999PlayerScript;
 
 namespace SCP_999
 {

@@ -6,7 +6,7 @@ using Scp999Handler_Player = Exiled.Events.Handlers.Player;
 using Exiled.Events.EventArgs;
 using UnityEngine;
 
-namespace SCP_999
+namespace SCP_999.Scp999PlayerScript
 {
     public class Scp999Script : CustomRole
     {
