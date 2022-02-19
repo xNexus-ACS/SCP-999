@@ -40,14 +40,17 @@
     <Reference Include="CommandSystem.Core">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\CommandSystem.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.API">
-      <HintPath>..\..\..\..\Desktop\EXILED VISUAL STUDIO\EXILED 4.1.7\EXILED\Plugins\dependencies\Exiled.API.dll</HintPath>
+    <Reference Include="Exiled.API, Version=4.2.3.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Downloads\Exiled (6)\EXILED\Plugins\dependencies\Exiled.API.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.CustomRoles">
-      <HintPath>..\..\..\..\Desktop\EXILED VISUAL STUDIO\EXILED 4.1.7\EXILED\Plugins\Exiled.CustomRoles.dll</HintPath>
+    <Reference Include="Exiled.CustomRoles, Version=4.1.7.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Downloads\Exiled (6)\EXILED\Plugins\Exiled.CustomRoles.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.Events">
-      <HintPath>..\..\..\..\Desktop\EXILED VISUAL STUDIO\EXILED 4.1.7\EXILED\Plugins\Exiled.Events.dll</HintPath>
+    <Reference Include="Exiled.Events, Version=4.2.3.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Downloads\Exiled (6)\EXILED\Plugins\Exiled.Events.dll</HintPath>
     </Reference>
     <Reference Include="Exiled.Permissions">
       <HintPath>..\..\..\..\Desktop\EXILED VISUAL STUDIO\EXILED 4.1.7\EXILED\Plugins\Exiled.Permissions.dll</HintPath>

@@ -21,11 +21,11 @@ namespace SCP_999
         public void OnRoundStarted()
         {
             bool Is999 = false;
-            bool Spawn999 = plugin.Rng.Next(100) <= 85;
+            bool Spawn999 = plugin.Rng.Next(100) <= 99;
 
             foreach (Player player in Player.List)
             {
-                switch (player.Role)
+                switch (player.Role.Type)
                 {
                     case RoleType.Scientist:
                     case RoleType.ClassD:

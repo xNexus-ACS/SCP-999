@@ -1,5 +1,4 @@
 ﻿using Exiled.API.Features;
-using SCP_999.Scp999PlayerScript;
 using System;
 using Server = Exiled.Events.Handlers.Server;
 
@@ -11,10 +10,9 @@ namespace SCP_999
         public override string Name { get; } = "Scp999PlayerScript";
         public override string Prefix { get; } = "scp_999";
         public override string Author { get; } = "xNexus-ACS";
-        public override Version Version { get; } = new Version(0, 3, 0);
-        public override Version RequiredExiledVersion { get; } = new Version(4, 2, 3);
+        public override Version Version { get; } = new Version(0, 4, 0);
+        public override Version RequiredExiledVersion { get; } = new Version(5, 0, 0);
 
-        public Scp999Script Scp999;
         public EventHandlers _scp999Handlers;
 
         public override void OnEnabled()
@@ -24,8 +22,6 @@ namespace SCP_999
             Server.RoundStarted += _scp999Handlers.OnRoundStarted;
 
             base.OnEnabled();
-
-            SCP999();
         }
         public override void OnDisabled()
         {
@@ -33,11 +29,6 @@ namespace SCP_999
 
             _scp999Handlers = null;
             base.OnDisabled();
-        }
-        public void SCP999()
-        {
-            Scp999 = new Scp999Script { Role = RoleType.Tutorial };
-            Scp999.TryRegister();
         }
     }
 }
