@@ -7,7 +7,7 @@ using Exiled.Events.EventArgs;
 using UnityEngine;
 using Exiled.API.Features.Attributes;
 
-namespace SCP_999.Scp999PlayerScript
+namespace SCP_999
 {
     [CustomRole(RoleType.Tutorial)]
     public class Scp999Script : CustomRole
@@ -20,6 +20,7 @@ namespace SCP_999.Scp999PlayerScript
         public override string Description { get; set; } = "The Cute SCP 999";
         public override RoleType Role { get; set; } = RoleType.Tutorial;
         public override int MaxHealth { get; set; } = 1000;
+        public override string CustomInfo { get; set; } = "SCP-999";
         public override SpawnProperties SpawnProperties { get; set; } = new SpawnProperties
         {
             Limit = 1,
@@ -41,6 +42,7 @@ namespace SCP_999.Scp999PlayerScript
             $"{ItemType.Flashlight}",
             $"{ItemType.KeycardO5}",
         };
+
         /// <summary>
         /// BC que aparecera al ponerle al jugador el role
         /// </summary>
@@ -66,11 +68,11 @@ namespace SCP_999.Scp999PlayerScript
         /// <summary>
         /// Desactiva los eventos
         /// </summary>
-        protected override void UnSubscribeEvents()
+        protected override void UnsubscribeEvents()
         {
             Scp999Handler_Player.DroppingItem -= this.OnDroppingItem;
             Scp999Handler_Player.PickingUpItem -= this.OnPickingUpItem;
-            base.UnSubscribeEvents();
+            base.UnsubscribeEvents();
         }
         /// <summary>
         /// Hace que el 999 no pueda tirar juegos
