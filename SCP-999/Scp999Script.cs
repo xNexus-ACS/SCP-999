@@ -5,9 +5,11 @@ using System.Collections.Generic;
 using Scp999Handler_Player = Exiled.Events.Handlers.Player;
 using Exiled.Events.EventArgs;
 using UnityEngine;
+using Exiled.API.Features.Attributes;
 
 namespace SCP_999.Scp999PlayerScript
 {
+    [CustomRole(RoleType.Tutorial)]
     public class Scp999Script : CustomRole
     {
         /// <summary>
@@ -18,7 +20,7 @@ namespace SCP_999.Scp999PlayerScript
         public override string Description { get; set; } = "The Cute SCP 999";
         public override RoleType Role { get; set; } = RoleType.Tutorial;
         public override int MaxHealth { get; set; } = 1000;
-        protected override SpawnProperties SpawnProperties { get; set; } = new SpawnProperties
+        public override SpawnProperties SpawnProperties { get; set; } = new SpawnProperties
         {
             Limit = 1,
             RoleSpawnPoints = new List<RoleSpawnPoint>
@@ -33,7 +35,7 @@ namespace SCP_999.Scp999PlayerScript
         /// <summary>
         /// Inventario que tendra el 999
         /// </summary>
-        protected override List<string> Inventory { get; set; } = new List<string>
+        public override List<string> Inventory { get; set; } = new List<string>
         {
             $"{ItemType.Coin}",
             $"{ItemType.Flashlight}",
