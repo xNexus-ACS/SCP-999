@@ -3,7 +3,6 @@ using Exiled.API.Features;
 using System;
 using Exiled.Permissions.Extensions;
 using Exiled.CustomRoles.API.Features;
-using SCP_999.Scp999PlayerScript;
 
 namespace SCP_999.Commands
 {
